@@ -2,7 +2,9 @@ package br.com.mercadolivre.service;
 
 import br.com.commons.dto.UsuarioDTO;
 import br.com.mercadolivre.domain.Usuario;
+import br.com.mercadolivre.mapper.UsuarioMapper;
 import br.com.mercadolivre.repository.UsuarioRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,13 +21,13 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-//    @Autowired
-//    UsuarioTransformMapper mapper;
+    @Autowired
+    UsuarioMapper mapper;
 
     @Transactional
     public UsuarioDTO criarUsuario(UsuarioDTO dto) {
         Usuario usuario = mapper.toEntity(dto);
-        Matcher mather = pattern.matcher(usuario.getEmail());
+        Matcher mather = pattern.matcher(usuario.getLogin());
 
         UsuarioDTO validado = null;
         if (mather.find()) {
@@ -43,7 +45,7 @@ public class UsuarioService {
     }
 
     public UsuarioDTO buscarAutorPorEmail(UsuarioDTO dto) {
-        Optional<Usuario> usuario = usuarioRepository.findByEmail(dto.getEmail());
+        Optional<Usuario> usuario = usuarioRepository.findByEmail(dto.getLogin());
         return usuario.isPresent() ? mapper.toDTO(usuario.get()) : new UsuarioDTO();
     }
 }
