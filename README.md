@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="1920" height="400" style="border-radius: 10px" src="src/main/assets/mercadolivre.jpeg" alt="Banner">
+    <img width="1920" height="400" style="border-radius: 10px" src="modulos/commons/src/main/assets/mercadolivre.jpeg" alt="Banner">
 </p>
 
 ##
