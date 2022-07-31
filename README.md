@@ -13,7 +13,7 @@
     <img alt="Repository size" src="https://img.shields.io/github/repo-size/Alexandrerehder/ot-mercadolivre">
 </p>
     
-## 💻 Sobre o projeto 
+## 💻 Sobre o projeto
 
 💡 Exercício retirado do programa de treinamento Orange Talents, com intuito de atender as necessidades da Mercado Livre.
 
@@ -22,7 +22,7 @@
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - Spring
-- RabbitMQ
+- Kafka
 - Kubernetes
 - Docker
 - Postgres
@@ -35,6 +35,7 @@ Antes de começar, é preciso ter instalado em sua máquina as seguintes ferrame
 - Maven
 - Git
 - Kubernetes
+- Kind
 - MakeFile
 
 ## 🚀 Como executar o projeto
@@ -51,4 +52,5 @@ $ sudo make up
 ```
 
 ## 📕 Documentação do projeto
+
 (...)
