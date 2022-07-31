@@ -22,9 +22,9 @@
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - Spring
+- ModelMapper
 - Kafka
 - Kubernetes
-- Docker
 - Postgres
 
 ## 🏁 Pré-requisitos
