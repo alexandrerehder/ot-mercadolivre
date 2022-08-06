@@ -32,8 +32,8 @@ public class UsuarioController {
             response = usuarioSender.listarUsuarioPorId(request);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
-            log.error("Erro ao enviar usuário para o RabbitMQ", e);
-            response.setMensagemRetorno("Erro ao enviar usuário para o RabbitMQ");
+            log.error("Erro ao enviar usuário para o Kafka", e);
+            response.setMensagemRetorno("Erro ao enviar usuário para o Kafka");
             return ResponseEntity.ok(response);
         }
     }
