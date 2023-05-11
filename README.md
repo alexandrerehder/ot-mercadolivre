@@ -21,8 +21,8 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- Spring
-- ModelMapper
+- Quarkus
+- MapStruct
 - Kafka
 - Kubernetes
 - Postgres
@@ -31,7 +31,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Antes de começar, é preciso ter instalado em sua máquina as seguintes ferramentas:
 
-- Java 1.8
+- Java 17
 - Maven
 - Git
 - Kubernetes
@@ -42,12 +42,12 @@ Antes de começar, é preciso ter instalado em sua máquina as seguintes ferrame
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/Alexandrerehder/ot-mercadolivre
+$ git clone https://github.com/alexandrerehder/ot-mercadolivre
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd ot-mercadolivre/
 
-# Suba os containers (mercadolivre, postgres, rabbitmq)
+# Suba os containers (mercadolivre, postgres, kafka)
 $ sudo make up
 ```
 
